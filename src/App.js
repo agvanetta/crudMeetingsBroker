@@ -1,16 +1,18 @@
-import './App.css';
-import Borrar from './components/Borrar';
-import Crear from './components/Crear';
-import ListarTodos from './components/ListarTodos';
-import Actualizar from './components/Actualizar';
+import BorrarCliente from './components/ClienteJS/BorrarCliente';
+import CrearCliente from './components/ClienteJS/CrearCliente';
+import ListarTodosClientes from './components/ClienteJS/ListarTodosClientes';
+import ActualizarCliente from './components/ClienteJS/ActualizarCliente';
+import BuscarPorId from './components/ClienteJS/BuscarPorIdCliente';
+import Header from './components/Header';
+import Sidebar from './components/Sidebar';
+import HomeClientes from './components/HomeClientes';
 
 function App() {
   return (
-    <div className="App">
-      <Crear/>
-      <ListarTodos/>
-      <Borrar/>
-      <Actualizar/>
+    <div >
+      <Header/>
+      <HomeClientes/>
+      <Sidebar/>
     </div>
   );
 }

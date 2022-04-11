@@ -1,0 +1,10 @@
+.home{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-color: white;
+    font-family: 'Lato', sans-serif;
+    width: calc(100% - 258px);
+    float: right;
+    
+}

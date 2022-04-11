@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 
 function ListarTodos() {
-  const urlApi = "http://localhost:8080/estudiantes/todos";
+  const urlApi = "http://localhost:8080/clientes/todos";
   const [datav2, setData] = useState([]);
 
   let settings = {
@@ -11,7 +11,7 @@ function ListarTodos() {
     },
   };
 
-  function getEstudiantes() {
+  function getClientes() {
     fetch(urlApi, settings)
       .then((response) => {
         return response.json();
@@ -27,11 +27,11 @@ function ListarTodos() {
   return (
     <>
       <div>Listar Todos</div>
-      <button onClick={() => getEstudiantes()}> Listar </button>
+      <button onClick={() => getClientes()}> Listar </button>
       {datav2.length !== 0 ? (
         <div>
           {datav2[0].map((obj, index) => (
-            <div key={index}> {obj.nombre}</div>
+            <div key={index}> {obj.id} {obj.nombre}, {obj.apellido}</div>
           ))}
         </div>
       ) : (

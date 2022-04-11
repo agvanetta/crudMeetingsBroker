@@ -10,7 +10,7 @@ function Borrar() {
 
   function deleteEstudiante() {
     const id = document.querySelector("#delete").value;
-    const urlApi = "http://localhost:8080/estudiantes/" + id;
+    const urlApi = "http://localhost:8080/clientes/" + id;
     fetch(urlApi, settings).then((response) => response.json());
     resetUploadForm();
   }
