@@ -1,4 +1,6 @@
 import React from 'react'
+import "./Crear.css";
+
 
 let urlApi = "http://localhost:8080/estudiantes"; // url que enviaremos a fetch
 
@@ -34,11 +36,13 @@ function callApi() {
 
 function Crear() {
   return (
-    <div>
-        <h2 style={{ marginTop: "10px", marginBotton: "10px" }}>Crear Estudiante</h2>
-      <label key={1} htmlFor="nombre">  Nombre: <input key={2} type="text" name="nombre" id="nombre" />  </label>
-      <label key={3} htmlFor="Apellido"> Apellido: <input key={4} type="text" name="apellido" id="apellido" />   </label>
-      <input type="button" value="Crear" onClick={() => callApi()} />
+    <div className='crear'>
+        <h3 style={{ marginTop: "10px", marginBotton: "10px" }}>Crear Estudiante</h3>
+        <div className='crear__opciones'>
+         <label className='label' key={1} htmlFor="nombre">  Nombre: <input key={2} type="text" name="nombre" id="nombre" />  </label>
+        <label className='label' key={3} htmlFor="Apellido"> Apellido: <input key={4} type="text" name="apellido" id="apellido" />   </label>
+         <input className="buttom" type="button" value="Crear" onClick={() => callApi()} />
+      </div>
     </div>
   )
 }

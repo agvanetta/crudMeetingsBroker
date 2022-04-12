@@ -9,11 +9,11 @@ import BuscarPorId from './ClienteJS/BuscarPorIdCliente';
 function HomeClientes() {
   return (
     <div className='home'>
-        <ListarTodos/>
-        <ActualizarCliente/>
         <BuscarPorId/>
+        <ActualizarCliente/>
         <CrearCliente/>
         <BorrarCliente/>
+        <ListarTodos/>
     </div>
   )
 }

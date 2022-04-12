@@ -1,4 +1,6 @@
 import React, { useState } from "react";
+import "./Listar.css";
+
 
 function ListarTodos() {
   const urlApi = "http://localhost:8080/clientes/todos";
@@ -25,19 +27,19 @@ function ListarTodos() {
   }
 
   return (
-    <>
-      <div>Listar Todos</div>
-      <button onClick={() => getClientes()}> Listar </button>
+    <div className="listar">
+      <h3>Listar Todos</h3>
+      <button className="buttom" onClick={() => getClientes()}> Listar </button>
       {datav2.length !== 0 ? (
         <div>
           {datav2[0].map((obj, index) => (
-            <div key={index}> {obj.id} {obj.nombre}, {obj.apellido}</div>
+            <div key={index}> ID :  {obj.id}  | {obj.nombre}, {obj.apellido}</div>
           ))}
         </div>
       ) : (
         ""
       )}
-    </>
+    </div>
   );
 }
 

@@ -1,4 +1,6 @@
 import React, { useState } from "react";
+import "./BuscarPorIdCliente.css";
+
 
 function BuscarPorId() {
   function resetUploadForm() {
@@ -23,16 +25,20 @@ function BuscarPorId() {
   }
 
   return (
-    <>
-      <div> Ingrese id para buscar</div>
-      <input type="text" name="idcliente" id="idcliente" />
-      <button onClick={() => getCliente()}>Buscar</button>
+    <div className="busqueda">
+      <h3>Ingrese id para buscar :</h3>
       <div>
-      {datav2.length !== 0 ? (<div > {datav2[0].nombre} </div>    )
+        <input type="text" name="idcliente" id="idcliente" />
+        <button className="busqueda_buttom" onClick={() => getCliente()}>Buscar</button>
+      </div>
+      <div>
+      {datav2.length !== 0 ? (
+        <div className="busqueda__data"> ID:  {datav2[0].id} | {datav2[0].nombre}, {datav2[0].apellido}</div>
+        )
       : 
       (        ""      )}
       </div>
-    </>
+    </div>
   );
 }
 

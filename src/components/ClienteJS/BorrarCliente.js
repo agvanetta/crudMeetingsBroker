@@ -1,4 +1,5 @@
 import React from "react";
+import "./Borrar.css";
 
 function Borrar() {
   function resetUploadForm() {
@@ -16,11 +17,13 @@ function Borrar() {
   }
 
   return (
-    <>
-      <div> Ingrese id para borrar, luego actualice la BD</div>
-      <input type="text" name="delete" id="delete" />
-      <button onClick={() => deleteEstudiante()}>Borrar</button>
-    </>
+    <div className="borrar">
+      <h3> Ingrese id para borrar, luego actualice la BD</h3>
+      <div>
+        <input className="label" type="text" name="delete" id="delete" />
+        <button className="buttom" onClick={() => deleteEstudiante()}>Borrar</button>
+      </div>
+    </div>
   );
 }
 

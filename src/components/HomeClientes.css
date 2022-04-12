@@ -1,6 +1,6 @@
 .home{
     display: flex;
-    align-items: center;
+    align-items:initial;
     flex-direction: column;
     background-color: white;
     font-family: 'Lato', sans-serif;
@@ -8,3 +8,4 @@
     float: right;
     
 }
+

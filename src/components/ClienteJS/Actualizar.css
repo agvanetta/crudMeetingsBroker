@@ -1,0 +1,34 @@
+.actualizar{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    background-color: rgb(224, 224, 224);
+    padding: 20px;
+    margin: 10px 40px;
+    border-radius: 10px;
+    border: 1px solid rgb(146, 147, 150);
+}
+
+.actualizar__opciones{
+    display: flex;
+    align-items: center;
+}
+
+.label{
+    margin-right: 20px;
+    margin-bottom: 10px;
+}
+
+.buttom{
+
+    border-radius: 7px;
+    background-color: rgb(36, 34, 34);
+    color: white;
+    margin-bottom: 10px;
+
+}
+
+.buttom:hover{
+    background-color:rgb(69, 65, 65);;
+    transition: 0.5s;
+}

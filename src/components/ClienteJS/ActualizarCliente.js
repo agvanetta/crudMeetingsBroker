@@ -1,4 +1,5 @@
 import React from 'react'
+import "./Actualizar.css";
 
 function resetUploadForm(){
     document.querySelector('#idMod').value = "";
@@ -35,12 +36,14 @@ function ejecutar() {
 
 function Modificar() {
   return (
-    <div>
-        <h2 style={{ marginTop: "10px", marginBotton: "10px" }}>Modificar Cliente</h2>
-      <label key={1} htmlFor="id">  Id: <input key={2} type="text" name="id" id="idMod" />  </label>
-      <label key={3} htmlFor="nombre">  Nombre: <input key={4} type="text" name="nombre" id="nombreMod" />  </label>
-      <label key={5} htmlFor="apellido"> Apellido: <input key={6} type="text" name="apellido" id="apellidoMod" />   </label>
-      <input type="button" value="Modificar" onClick={() => ejecutar()} />
+    <div className='actualizar'>
+      <h3 style={{ marginTop: "10px", marginBotton: "10px" }}>Modificar Cliente</h3>
+      <div className='actualizar__opciones'>
+        <label className='label' key={1} htmlFor="id">  Id: <input key={2} type="text" name="id" id="idMod" />  </label>
+        <label className='label' key={3} htmlFor="nombre">  Nombre: <input key={4} type="text" name="nombre" id="nombreMod" />  </label>
+        <label className='label' key={5} htmlFor="apellido"> Apellido: <input key={6} type="text" name="apellido" id="apellidoMod" />   </label>
+        <input className="buttom" type="button" value="Modificar" onClick={() => ejecutar()} />
+      </div>
     </div>
   )
 }
