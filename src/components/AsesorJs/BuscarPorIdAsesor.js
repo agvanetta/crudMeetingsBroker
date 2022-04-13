@@ -1,8 +1,6 @@
 import React, { useState } from "react";
 import "../styles/BuscarPorId.css"
 
-
-
 function BuscarPorId() {
   function resetUploadForm() {
     document.querySelector("#idcliente").value = "";
@@ -16,9 +14,9 @@ function BuscarPorId() {
     },
   };
 
-  function getCliente() {
+  function getA() {
   const id = document.querySelector("#idcliente").value;
-  const urlApi = "http://localhost:8080/clientes/"+id;
+  const urlApi = "http://localhost:8080/asesores/"+id;
     fetch(urlApi, settings)
       .then((response) => {        return response.json();      })
       .then((data) => {        setData([data]);      })
@@ -30,7 +28,7 @@ function BuscarPorId() {
       <h3>Ingrese id para buscar</h3>
       <div>
         <input type="text" name="idcliente" id="idcliente" />
-        <button className="busqueda_buttom" onClick={() => getCliente()}>Buscar</button>
+        <button className="busqueda_buttom" onClick={() => getA()}>Buscar</button>
       </div>
       <div>
       {datav2.length !== 0 ? (

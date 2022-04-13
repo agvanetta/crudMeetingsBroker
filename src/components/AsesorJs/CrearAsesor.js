@@ -1,8 +1,7 @@
 import React, { useState } from "react";
 import "../styles/Crear.css"
 
-
-let urlApi = "http://localhost:8080/clientes"; // url que enviaremos a fetch
+let urlApi = "http://localhost:8080/asesores"; // url que enviaremos a fetch
 
 function resetUploadForm() {
   document.querySelector("#nombre").value = "";
@@ -41,7 +40,7 @@ function Crear() {
 
   return (
     <div className="crear">
-      <h3 style={{ marginTop: "10px", marginBotton: "10px" }}>Crear Cliente</h3>
+      <h3 style={{ marginTop: "10px", marginBotton: "10px" }}>Crear Asesor</h3>
       <div className="crear__opciones">
         <label className="label" key={1} htmlFor="nombre">
           {" "}

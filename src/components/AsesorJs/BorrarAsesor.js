@@ -12,9 +12,9 @@ function Borrar() {
     method: "DELETE",
   };
 
-  function deleteEstudiante() {
+  function deleteA() {
     const id = document.querySelector("#delete").value;
-    const urlApi = "http://localhost:8080/clientes/" + id;
+    const urlApi = "http://localhost:8080/asesores/" + id;
     fetch(urlApi, settings).then((response) => response.json());
     resetUploadForm();
     setData("Borrado exitoso")
@@ -25,7 +25,7 @@ function Borrar() {
       <h3> Ingrese id para borrar</h3>
       <div>
         <input className="label" type="text" name="delete" id="delete" />
-        <button className="buttom" onClick={() => deleteEstudiante()}>Borrar</button>
+        <button className="buttom" onClick={() => deleteA()}>Borrar</button>
         <div> {datav2} </div>
       </div>
     </div>

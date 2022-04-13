@@ -3,7 +3,7 @@ import "../styles/Listar.css"
 
 
 function ListarTodos() {
-  const urlApi = "http://localhost:8080/asesores/todos";
+  const urlApi = "http://localhost:8080/reuniones/todas";
   const [datav2, setData] = useState([]);
 
   let settings = {
@@ -28,12 +28,13 @@ function ListarTodos() {
 
   return (
     <div className="listar">
-      <h3>Listar Todos</h3>
+      <h3>Listar Todas</h3>
       <button className="buttom" onClick={() => getClientes()}> Listar </button>
       {datav2.length !== 0 ? (
         <div>
-          {datav2[0].map((obj, index) => (
-            <div key={index}> ID :  {obj.id}  | {obj.nombre}, {obj.apellido}</div>
+          {datav2[0].map((obj, index) => ( 
+            <div key={index} className="busqueda__data">  ID Reunion:  {obj.id} | Asesor: {obj.asesor.nombre}, {obj.asesor.apellido} ID {obj.asesor.id} .
+         Cliente: {obj.cliente.nombre}, {obj.cliente.apellido} ID {obj.cliente.id}. Fecha: {obj.fecha} </div>
           ))}
         </div>
       ) : (

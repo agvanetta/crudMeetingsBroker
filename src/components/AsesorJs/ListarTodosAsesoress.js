@@ -2,8 +2,9 @@ import React, { useState } from "react";
 import "../styles/Listar.css"
 
 
+
 function ListarTodos() {
-  const urlApi = "http://localhost:8080/asesores/todos";
+  const urlApi = "http://localhost:8080/clientes/todos";
   const [datav2, setData] = useState([]);
 
   let settings = {

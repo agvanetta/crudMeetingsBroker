@@ -32,3 +32,8 @@
     font-size: 14px;
     color: rgb(76, 124, 141);
 }
+
+.links{
+    text-decoration: none;
+    color: black;
+}
