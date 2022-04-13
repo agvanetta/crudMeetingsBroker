@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/crudMeetingsBroker/static/css/main.89472352.css",
-    "main.js": "/crudMeetingsBroker/static/js/main.a35b0815.js",
+    "main.js": "/crudMeetingsBroker/static/js/main.bf0c40a6.js",
     "static/js/787.ad4f4dcc.chunk.js": "/crudMeetingsBroker/static/js/787.ad4f4dcc.chunk.js",
     "index.html": "/crudMeetingsBroker/index.html",
     "main.89472352.css.map": "/crudMeetingsBroker/static/css/main.89472352.css.map",
-    "main.a35b0815.js.map": "/crudMeetingsBroker/static/js/main.a35b0815.js.map",
+    "main.bf0c40a6.js.map": "/crudMeetingsBroker/static/js/main.bf0c40a6.js.map",
     "787.ad4f4dcc.chunk.js.map": "/crudMeetingsBroker/static/js/787.ad4f4dcc.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.89472352.css",
-    "static/js/main.a35b0815.js"
+    "static/js/main.bf0c40a6.js"
   ]
 }
