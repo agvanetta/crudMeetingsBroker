@@ -1,8 +1,6 @@
 import React, { useState } from "react";
 import "../styles/BuscarPorId.css"
 
-
-
 function BuscarPorId() {
   function resetUploadForm() {
     document.querySelector("#idcliente").value = "";
